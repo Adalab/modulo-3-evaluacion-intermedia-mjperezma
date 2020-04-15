@@ -8,20 +8,16 @@ class App extends React.Component {
     super(props);
     this.state = {
       Pokedex: PokedexData,
-      Fav: [],
+      Fav: false,
     };
     this.addFavorite = this.addFavorite.bind(this);
   }
 
   addFavorite(favId) {
-    debugger;
-    const pokemonFav = this.state.Pokedex.find((Pokede) => Pokede.id === favId);
-    this.setState(function (prevState) {
-      prevState.Fav.push(pokemonFav);
-      return {
-        Fav: prevState.Fav,
-      };
+    this.setState({
+      Fav: true,
     });
+
     console.log('me clickan en app', favId);
   }
   render() {

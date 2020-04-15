@@ -14,14 +14,14 @@ function Pokemon(props) {
     );
   });
   return (
-    <>
+    <div className={`${props.favs ? 'addFav' : 'pokelist__items'}`}>
       <img src={props.items.url} alt={props.items.name} />
       <h4 className='pokemon__types__name'>{props.items.name}</h4>
       <ul className='pokemon__types'>{itemsTypes}</ul>
       <button className='btn' type='submit' id={props.items.id} onClick={handlBtn}>
         Select as favorite
       </button>
-    </>
+    </div>
   );
 }
 Pokemon.propTypes = {
