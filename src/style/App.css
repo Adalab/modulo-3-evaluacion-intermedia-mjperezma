@@ -35,7 +35,14 @@
   border-radius: 10px;
   margin: 10px;
   background-color: rgb(185, 223, 219);
+  transition: all ease 1s;
 }
+
+.pokelist__items:hover {
+  box-shadow: 0 0 10px rgba(33, 33, 33, 0.8);
+  transform: scale(1.1);
+}
+
 
 .pokemon__types {
   text-align: left;
@@ -56,4 +63,21 @@
   font-size: 10px;
   font-weight: bold;
 
+}
+
+
+.btn {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(185, 223, 219);
+  border: 1px black solid;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.addFav {
+
+  background-color: red;
 }
