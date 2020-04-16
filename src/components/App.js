@@ -14,12 +14,14 @@ class App extends React.Component {
   }
 
   addFavorite(favId) {
-    this.setState({
-      Fav: true,
-    });
-
     console.log('me clickan en app', favId);
+    if (this.state.Pokedex.find((favPoke) => favPoke.id === favId)) {
+      return this.setState({
+        Fav: true,
+      });
+    }
   }
+
   render() {
     return (
       <main className='App'>
