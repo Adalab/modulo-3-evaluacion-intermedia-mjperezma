@@ -9,7 +9,7 @@ function Pokelist(props) {
       </li>
     );
   });
-  return <ul className='pokelist'>{ListPokemon}</ul>;
+  return <ul className='pokelist '>{ListPokemon}</ul>;
 }
 
 export default Pokelist;

@@ -83,6 +83,7 @@
   border: solid 1px black;
   border-radius: 10px;
   margin: 10px;
+  color: white;
   transition: all ease 1s;
 
 }
